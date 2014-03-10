@@ -1,0 +1,8 @@
+TextContent = 
+{
+	ZilchScriptBuilder = 
+	{
+		string Name = "CheckForNotMoving",
+		uint64 ResourceId = 537c610d2af4d33c,
+	},
+},

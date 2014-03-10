@@ -1,0 +1,66 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Archetyped = 
+	{
+		string Name = "53768c63d0a98357:StoneBreak",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [3.17294, 10.0762, 1.80887],
+		Vec3 Scale = [1, 1, 1],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	SpriteParticleSystem = 
+	{
+		SystemChildMode ChildMode = Independent,
+		SystemSpace SystemSpace = WorldSpace,
+		uint DrawOrder = 0,
+		ParticleGeometry GeometryMode = Billboarded,
+		ParticleRenderMode RenderMode = Blended,
+		ParticleSortMode SortMode = None,
+		string Texture = "53768d132ad55eda:SpriteFragmentTest",
+		Vec4 Tint = [1, 1, 1, 1],
+		float VelocityScale = 1,
+		float LengthScale = 0,
+		float MaxParticleSize = 100,
+		Vec3 SystemSize = [5, 5, 5],
+	},
+	LinearParticleAnimator = 
+	{
+		Vec3 Force = [0, -10, 0],
+		Vec3 RandomForce = [0, 0, 0],
+		float Torque = 0,
+		float Growth = 0,
+		float Dampening = 1,
+		Vec3 Twist = [0, 0, 0],
+	},
+	SphericalParticleEmitter = 
+	{
+		bool Active = true,
+		uint EmitCount = 40,
+		float EmitRate = 1000,
+		float EmitVariance = 0,
+		float Size = 0.6,
+		float SizeVariance = 0,
+		float Lifetime = 2,
+		float LifetimeVariance = 0,
+		float Spin = 0,
+		float SpinVariance = 300,
+		bool RandomSpin = true,
+		float Fill = 0,
+		float EmitterVelocityPercent = 0,
+		Vec3 StartVelocity = [0, 0, 0],
+		Vec3 RandomVelocity = [3, 3, 0],
+		Vec3 TangentVelocity = [0, 0, 0],
+		Vec3 EmitterSize = [0.65, 2.2, 0],
+		bool FastMovingEmitter = false,
+	},
+	ParticleGradientAnimator = 
+	{
+		string ColorGradientName = "5376b2e21a24b4c1:FadeOut",
+	},
+},

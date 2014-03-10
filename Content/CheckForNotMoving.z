@@ -1,0 +1,21 @@
+class CheckForNotMoving : ScriptComponent
+{
+    sends CheckForMovingObjects : Event;
+    
+    constructor() : base()
+    {
+    }
+
+    function Initialize(init : CogInitializer)
+    {
+        Zero.Connect(this.Space, Events.CheckForMovingObjects, this.OnCheckForMovingObjects);
+    }
+
+    function OnCheckForMovingObjects(updateEvent : UpdateEvent)
+    {
+        if (!this.Owner.RigidBody.IsAsleep())
+        {
+            ++this.LevelSettings.GameLogic.MovingObjects;
+        }
+    }
+}

@@ -1,0 +1,81 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "Ball",
+	},
+	Archetyped = 
+	{
+		string Name = "5376abfcc9acebd5:Ball",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [-6.04975, -3.61311, 0.0678349],
+		Vec3 Scale = [1, 1, 1],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	Sprite = 
+	{
+		string SpriteSource = "5376a85d0d12870d:Ball",
+		bool FlipX = false,
+		bool FlipY = false,
+		Vec4 Color = [1, 1, 1, 1],
+		bool Visible = true,
+		bool OnTop = false,
+		bool AnimationActive = true,
+		float AnimationSpeed = 1,
+		uint StartFrame = 0,
+		BlendMode BlendMode = Alpha,
+		SpriteGeometryMode GeometryMode = ZPlane,
+		string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+	},
+	Reactive = 
+	{
+		bool Active = true,
+		bool CaptureMouse = true,
+	},
+	Ball = 
+	{
+		string Slingshot = ":/Slingshot",
+		float MaxStretchLength = 3,
+		float ShootPower = 10,
+	},
+	SphereCollider = 
+	{
+		bool Ghost = false,
+		bool SendsMessages = true,
+		bool Seamless = false,
+		string MaterialName = "4faa6050b8692851:HardMaterial",
+		string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+		Vec3 Offset = [0, 0, 0],
+		float Radius = 0.5,
+	},
+	RigidBody = 
+	{
+		bool Static = false,
+		bool Asleep = false,
+		bool Kinematic = true,
+		bool RotationLocked = false,
+		bool Mode2D = true,
+		bool AllowSleep = true,
+		bool Inherit2DMode = true,
+		Vec3 Velocity = [0, 0, 0],
+		Vec3 AngularVelocity = [0, 0, 0],
+	},
+	MassOverride = 
+	{
+		bool Active = true,
+		float invMass = 0.333333,
+		Vec3 invInertiaX = [3.33333, 0, 0],
+		Vec3 invInertiaY = [0, 3.33333, 0],
+		Vec3 invInertiaZ = [0, 0, 3.33333],
+		Vec3 LocalCenterOfMass = [0, 0, 0],
+	},
+	CheckForNotMoving = 
+	{
+	},
+},

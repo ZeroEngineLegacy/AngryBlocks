@@ -1,0 +1,30 @@
+ImageContent = 
+{
+	TextureBuilder = 
+	{
+		string Name = "Ball",
+		uint64 ResourceId = 5376a874719259f9,
+		OutputTextureFormat Format = AutoColor,
+		FixPowerOf2 FixPowerOf2 = Auto,
+		ImageFilter ResizeFilter = Cubic,
+		bool GenerateMipMaps = true,
+		ImageFilter MipFilter = Cubic,
+	},
+	SpriteSourceBuilder = 
+	{
+		string Name = "Ball",
+		uint64 ResourceId = 5376a85d0d12870d,
+		uint64 AtlasId = 5274cf95e4a661fd,
+		uint FrameSizeX = 32,
+		uint FrameSizeY = 32,
+		uint FrameCount = 1,
+		float FrameDelay = 0.0833333,
+		float OriginX = 16,
+		float OriginY = 16,
+		float PixelsPerUnit = 32,
+		bool Smoothing = true,
+		bool Looping = true,
+		Vec4 Slices = [0, 0, 0, 0],
+		SpriteFill Fill = Stretch,
+	},
+},
