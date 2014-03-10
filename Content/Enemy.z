@@ -7,7 +7,7 @@ class Enemy : ScriptComponent
     var Falling : SpriteSource = SpriteSource.Find("EnemyMoving");
     
     [Property]
-    var VelocityThreshold : Real = 0.5;
+    var VelocityThreshold : Real = 0.8;
     
     [Dependency]
     var RigidBody : RigidBody = null;
@@ -22,21 +22,6 @@ class Enemy : ScriptComponent
     function Initialize(init : CogInitializer)
     {
         Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
-        Zero.Connect(this.Owner, "Death", this.OnDeath);
-        
-        ++this.LevelSettings.GameLogic.EnemiesLeft;
-    }
-    
-    function OnDeath(e : Event)
-    {
-        var gameLogic = this.LevelSettings.GameLogic;
-        --gameLogic.EnemiesLeft;
-        
-        if (gameLogic.EnemiesLeft == 0)
-        {
-            gameLogic.State = GameState.Won;
-            gameLogic.ShowText("You win!");
-        }
     }
 
     function OnLogicUpdate(updateEvent : UpdateEvent)

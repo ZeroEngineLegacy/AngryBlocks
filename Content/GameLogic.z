@@ -8,10 +8,6 @@ enum GameState
 
 class GameLogic : ScriptComponent
 {
-    var EnemiesLeft : Integer = 0;
-    
-    var MovingObjects : Integer = 0;
-    
     var State : Integer = GameState.WaitingToFire;
     
     constructor() : base()
@@ -43,13 +39,28 @@ class GameLogic : ScriptComponent
     {
         if (this.State == GameState.Fired)
         {
-            this.MovingObjects = 0;
-            this.Space.DispatchEvent(Events.CheckForMovingObjects, new Event());
-            
-            if (this.MovingObjects == 0)
+            if (this.Space.FindAllObjectsByName("Enemy").IsNotEmpty == false)
             {
+                this.State = GameState.Won;
+                this.ShowText("You win!");
+                return;
+            }
+            
+            var allSleeping = true;
+            
+            foreach (var cog in this.Space.AllObjects())
+            {
+                if (cog.RigidBody != null && cog.RigidBody.IsAsleep() == false)
+                {
+                    allSleeping = false;
+                }
+            }
+            
+            if (allSleeping)
+            {
+                this.State = GameState.Lost;
                 this.ShowText("You lose!");
-                Zero.Disconnect(this.Owner, Events.LogicUpdate, this);
+                return;
             }
         }
     }

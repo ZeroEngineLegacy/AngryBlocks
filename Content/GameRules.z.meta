@@ -1,8 +1,0 @@
-TextContent = 
-{
-	ZilchScriptBuilder = 
-	{
-		string Name = "GameRules",
-		uint64 ResourceId = 53777ef3063d2e8d,
-	},
-},

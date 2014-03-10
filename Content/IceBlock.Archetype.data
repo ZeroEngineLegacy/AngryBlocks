@@ -60,7 +60,4 @@ Cog =
 		string DamagedSprite = "5376abd8c2832b11:IceBlockDamaged",
 		string DeathExplosion = "53768a6089f6ada1:IceBreak",
 	},
-	CheckForNotMoving = 
-	{
-	},
 },

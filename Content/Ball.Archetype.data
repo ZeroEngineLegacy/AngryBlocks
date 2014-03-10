@@ -75,7 +75,4 @@ Cog =
 		Vec3 invInertiaZ = [0, 0, 3.33333],
 		Vec3 LocalCenterOfMass = [0, 0, 0],
 	},
-	CheckForNotMoving = 
-	{
-	},
 },

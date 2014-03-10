@@ -4,13 +4,17 @@ Cog =
 	{
 		uint Id = 1,
 	},
+	Named = 
+	{
+		string Name = "Enemy",
+	},
 	Archetyped = 
 	{
 		string Name = "5376ab81ca43fa5d:Enemy",
 	},
 	Transform = 
 	{
-		Vec3 Translation = [2.58177, 5.49612, 0],
+		Vec3 Translation = [2.58177, 5.33436, 0],
 		Vec3 Scale = [1, 1, 1],
 		Quat Rotation = [0, 0, 0, 1],
 	},
@@ -64,9 +68,6 @@ Cog =
 	{
 		string NotFalling = "5376a82b7c1eb966:Enemy",
 		string Falling = "5376a82b7c1efa5b:EnemyMoving",
-		float VelocityThreshold = 0.5,
-	},
-	CheckForNotMoving = 
-	{
+		float VelocityThreshold = 0.8,
 	},
 },

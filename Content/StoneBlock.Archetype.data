@@ -10,7 +10,7 @@ Cog =
 	},
 	Transform = 
 	{
-		Vec3 Translation = [2.59321, -5.06667, 0],
+		Vec3 Translation = [2.59321, 2.92773, 0],
 		Vec3 Scale = [1, 1, 1],
 		Quat Rotation = [0, 0, 0, 1],
 	},
@@ -59,8 +59,5 @@ Cog =
 		float MinimumImpulseForDamage = 1,
 		string DamagedSprite = "5376abd8c2824fc2:HardBlockDamaged",
 		string DeathExplosion = "53768c63d0a98357:StoneBreak",
-	},
-	CheckForNotMoving = 
-	{
 	},
 },

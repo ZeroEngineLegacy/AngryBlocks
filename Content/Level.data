@@ -58,9 +58,9 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [-8.24089, -3.12765, 33.042],
+			Vec3 Translation = [3.14661, 3.32555, 13.2264],
 			Vec3 Scale = [1, 1, 1],
-			Quat Rotation = [0.0158051, -0.155349, 0.0024858, 0.98773],
+			Quat Rotation = [-0.123584, 0.0396822, 0.00494597, 0.991528],
 		},
 		Camera = 
 		{
@@ -76,10 +76,10 @@ Level =
 		EditorCameraController = 
 		{
 			ControlMode ControlMode = Orbit,
-			float LookDistance = 33.5729,
-			float VerticalAngle = -0.0320001,
-			float HorizontalAngle = 0.312001,
-			Vec3 LookTarget = [2.05949, -2.0535, 1.1063],
+			float LookDistance = 14.5729,
+			float VerticalAngle = 0.248,
+			float HorizontalAngle = -0.0799998,
+			Vec3 LookTarget = [2.01765, -0.251594, -0.855459],
 		},
 		EditorRenderer = 
 		{
@@ -182,24 +182,10 @@ Level =
 	},
 	ArchetypeInstance = 
 	{
-		string Name = "5376ab81ca43fa5d:Enemy",
-		LinkId = 
-		{
-			uint Id = 6,
-		},
-		Transform = 
-		{
-			Vec3 Translation = [2.58177, 5.49612, 0],
-			Vec3 Scale = [1, 1, 1],
-			Quat Rotation = [0, 0, 0, 1],
-		},
-	},
-	ArchetypeInstance = 
-	{
 		string Name = "5376aa14d5966ef5:StoneBlock",
 		LinkId = 
 		{
-			uint Id = 7,
+			uint Id = 6,
 		},
 		Transform = 
 		{
@@ -213,11 +199,11 @@ Level =
 		string Name = "5376aa14d5966ef5:StoneBlock",
 		LinkId = 
 		{
-			uint Id = 8,
+			uint Id = 7,
 		},
 		Transform = 
 		{
-			Vec3 Translation = [5.76416, 2.92773, 0],
+			Vec3 Translation = [5.76416, 2.84673, 0],
 			Vec3 Scale = [1, 1, 1],
 			Quat Rotation = [0, 0, 0, 1],
 		},
@@ -227,7 +213,7 @@ Level =
 		string Name = "5376aa14d5966ef5:StoneBlock",
 		LinkId = 
 		{
-			uint Id = 9,
+			uint Id = 8,
 		},
 		Transform = 
 		{
@@ -241,35 +227,21 @@ Level =
 		string Name = "5376aa14d5966ef5:StoneBlock",
 		LinkId = 
 		{
+			uint Id = 9,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [4.16398, 2.84673, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5376aa14d5966ef5:StoneBlock",
+		LinkId = 
+		{
 			uint Id = 10,
-		},
-		Transform = 
-		{
-			Vec3 Translation = [2.59321, 2.92773, 0],
-			Vec3 Scale = [1, 1, 1],
-			Quat Rotation = [0, 0, 0, 1],
-		},
-	},
-	ArchetypeInstance = 
-	{
-		string Name = "5376aa14d5966ef5:StoneBlock",
-		LinkId = 
-		{
-			uint Id = 11,
-		},
-		Transform = 
-		{
-			Vec3 Translation = [4.16398, 2.92773, 0],
-			Vec3 Scale = [1, 1, 1],
-			Quat Rotation = [0, 0, 0, 1],
-		},
-	},
-	ArchetypeInstance = 
-	{
-		string Name = "5376aa14d5966ef5:StoneBlock",
-		LinkId = 
-		{
-			uint Id = 12,
 		},
 		Transform = 
 		{
@@ -283,13 +255,17 @@ Level =
 		string Name = "5376ab81ca43fa5d:Enemy",
 		LinkId = 
 		{
-			uint Id = 13,
+			uint Id = 11,
 		},
 		Transform = 
 		{
-			Vec3 Translation = [4.15254, 5.49612, 0],
+			Vec3 Translation = [4.15254, 5.33436, 0],
 			Vec3 Scale = [1, 1, 1],
 			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Enemy",
 		},
 	},
 	ArchetypeInstance = 
@@ -297,21 +273,7 @@ Level =
 		string Name = "5376aa14d5966ef5:StoneBlock",
 		LinkId = 
 		{
-			uint Id = 14,
-		},
-		Transform = 
-		{
-			Vec3 Translation = [2.59321, -1.11907, 0],
-			Vec3 Scale = [1, 1, 1],
-			Quat Rotation = [0, 0, 0, 1],
-		},
-	},
-	ArchetypeInstance = 
-	{
-		string Name = "5376aa14d5966ef5:StoneBlock",
-		LinkId = 
-		{
-			uint Id = 15,
+			uint Id = 12,
 		},
 		Transform = 
 		{
@@ -325,13 +287,17 @@ Level =
 		string Name = "5376ab81ca43fa5d:Enemy",
 		LinkId = 
 		{
-			uint Id = 16,
+			uint Id = 13,
 		},
 		Transform = 
 		{
-			Vec3 Translation = [5.75272, 5.49612, 0],
+			Vec3 Translation = [5.75272, 5.33436, 0],
 			Vec3 Scale = [1, 1, 1],
 			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Enemy",
 		},
 	},
 	ArchetypeInstance = 
@@ -339,7 +305,7 @@ Level =
 		string Name = "5376aa14d5966ef5:StoneBlock",
 		LinkId = 
 		{
-			uint Id = 17,
+			uint Id = 14,
 		},
 		Transform = 
 		{
@@ -353,7 +319,7 @@ Level =
 		string Name = "53768a008fd6a427:IceBlock",
 		LinkId = 
 		{
-			uint Id = 18,
+			uint Id = 15,
 		},
 		Transform = 
 		{
@@ -367,7 +333,7 @@ Level =
 		string Name = "5376aa14d5966ef5:StoneBlock",
 		LinkId = 
 		{
-			uint Id = 19,
+			uint Id = 16,
 		},
 		Transform = 
 		{
@@ -380,7 +346,7 @@ Level =
 	{
 		LinkId = 
 		{
-			uint Id = 20,
+			uint Id = 17,
 		},
 		Named = 
 		{
@@ -400,29 +366,11 @@ Level =
 			bool Visible = true,
 		},
 	},
-	ArchetypeInstance = 
-	{
-		string Name = "5376abfcc9acebd5:Ball",
-		LinkId = 
-		{
-			uint Id = 21,
-		},
-		Transform = 
-		{
-			Vec3 Translation = [-6.04975, -3.61311, 0.0678349],
-			Vec3 Scale = [1, 1, 1],
-			Quat Rotation = [0, 0, 0, 1],
-		},
-		Named = 
-		{
-			string Name = "Ball",
-		},
-	},
 	Cog = 
 	{
 		LinkId = 
 		{
-			uint Id = 22,
+			uint Id = 18,
 		},
 		Named = 
 		{
@@ -456,7 +404,7 @@ Level =
 	{
 		LinkId = 
 		{
-			uint Id = 23,
+			uint Id = 19,
 		},
 		Named = 
 		{
@@ -490,7 +438,7 @@ Level =
 	{
 		LinkId = 
 		{
-			uint Id = 24,
+			uint Id = 20,
 		},
 		Named = 
 		{
@@ -524,7 +472,7 @@ Level =
 	{
 		LinkId = 
 		{
-			uint Id = 25,
+			uint Id = 21,
 		},
 		Named = 
 		{
@@ -557,7 +505,7 @@ Level =
 	{
 		LinkId = 
 		{
-			uint Id = 26,
+			uint Id = 22,
 		},
 		Transform = 
 		{
@@ -580,6 +528,237 @@ Level =
 			TextAlign Align = Left,
 			float PixelsPerUnit = 64,
 			bool Smoothing = true,
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5376abfcc9acebd5:Ball",
+		LinkId = 
+		{
+			uint Id = 23,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-6.77267, -3.82961, 0.108297],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Ball",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5376aa14d5966ef5:StoneBlock",
+		LinkId = 
+		{
+			uint Id = 24,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0.522521, -5.15793, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, -0.305998, 0.952032],
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 25,
+		},
+		Named = 
+		{
+			string Name = "Enemy",
+		},
+		Archetyped = 
+		{
+			string Name = "5376ab81ca43fa5d:Enemy",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [2.58177, 5.33436, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		RigidBody = 
+		{
+			bool Static = false,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "5376a82b7c1eb966:Enemy",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+		},
+		Health = 
+		{
+			float Health = 60,
+			float DamagedHealth = 0,
+			float CollisionDamageScale = 10,
+			float MinimumImpulseForDamage = 1,
+			string DamagedSprite = "5376a82b7c1eb966:Enemy",
+			string DeathExplosion = "",
+		},
+		Enemy = 
+		{
+			string NotFalling = "5376a82b7c1eb966:Enemy",
+			string Falling = "5376a82b7c1efa5b:EnemyMoving",
+			float VelocityThreshold = 0.8,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 26,
+		},
+		Archetyped = 
+		{
+			string Name = "5376aa14d5966ef5:StoneBlock",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [2.59321, 2.84673, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		RigidBody = 
+		{
+			bool Static = false,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 2, 0.5],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "5376abd8c282117a:HardBlock",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+		},
+		Health = 
+		{
+			float Health = 100,
+			float DamagedHealth = 50,
+			float CollisionDamageScale = 10,
+			float MinimumImpulseForDamage = 1,
+			string DamagedSprite = "5376abd8c2824fc2:HardBlockDamaged",
+			string DeathExplosion = "53768c63d0a98357:StoneBreak",
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 27,
+		},
+		Archetyped = 
+		{
+			string Name = "5376aa14d5966ef5:StoneBlock",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [2.59321, -1.11907, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		RigidBody = 
+		{
+			bool Static = false,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 2, 0.5],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "5376abd8c282117a:HardBlock",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+		},
+		Health = 
+		{
+			float Health = 100,
+			float DamagedHealth = 50,
+			float CollisionDamageScale = 10,
+			float MinimumImpulseForDamage = 1,
+			string DamagedSprite = "5376abd8c2824fc2:HardBlockDamaged",
+			string DeathExplosion = "53768c63d0a98357:StoneBreak",
 		},
 	},
 },
