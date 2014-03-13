@@ -22,9 +22,11 @@ class Ball : ScriptComponent
         Zero.Connect(this.Owner, Events.MouseDown, this.OnMouseDown);
         Zero.Connect(this.Owner, Events.MouseUpdate, this.OnMouseUpdate);
         Zero.Connect(this.Owner, Events.MouseUp, this.OnMouseUp);
+        
+        Zero.Connect(init, Events.AllObjectsInitialized, this.OnAllObjectsInitialized);
     }
     
-    function OnAllObjectsCreated()
+    function OnAllObjectsInitialized(e : CogInitializerEvent)
     {
         this.SlingshotPosition = this.Slingshot.Cog.Transform.WorldTranslation;
     }
