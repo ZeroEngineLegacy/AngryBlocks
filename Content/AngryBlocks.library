@@ -31,6 +31,7 @@ ContentLibrary =
 		"IceFragment4.png",
 		"Level.data",
 		"LevelNoScripts.Level.data",
+		"RunTest.py",
 		"SleepingBug.Level.data",
 		"Space.data",
 		"SpriteFragmentIce.png",
