@@ -8,7 +8,7 @@ enum GameState
 
 class GameLogic : ScriptComponent
 {
-    var State : Integer = GameState.WaitingToFire;
+    var State : GameState = GameState.WaitingToFire;
     
     constructor() : base()
     {
