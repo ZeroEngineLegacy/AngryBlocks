@@ -37,7 +37,7 @@ class Health : ZilchComponent
         {
             if (this.Dead == false)
             {
-                this.Owner.DispatchEvent("Death", new Event());
+                this.Owner.DispatchEvent("Death", new ZilchEvent());
                 this.Owner.Destroy();
                 
                 if (this.DeathExplosion != null)
