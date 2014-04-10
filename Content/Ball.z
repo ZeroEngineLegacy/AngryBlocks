@@ -1,4 +1,4 @@
-class Ball : ScriptComponent
+class Ball : ZilchComponent
 {
     var Grabbed : Boolean = false;
     

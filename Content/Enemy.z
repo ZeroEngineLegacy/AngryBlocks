@@ -1,4 +1,4 @@
-class Enemy : ScriptComponent
+class Enemy : ZilchComponent
 {
     [Property]
     var NotFalling : SpriteSource = SpriteSource.Find("Enemy");

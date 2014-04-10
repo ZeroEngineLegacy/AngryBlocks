@@ -6,7 +6,7 @@ enum GameState
     Lost,
 }
 
-class GameLogic : ScriptComponent
+class GameLogic : ZilchComponent
 {
     var State : GameState = GameState.WaitingToFire;
     
