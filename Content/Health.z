@@ -40,12 +40,17 @@ class Health : ZilchComponent
                 this.Owner.DispatchEvent("Death", new ZilchEvent());
                 this.Owner.Destroy();
                 
-                if (this.DeathExplosion != null)
+                if (this.DeathExplosion != null && this.DeathExplosion != Archetype.Find("DefaultArchetype"))
                 {
                     var explosion = this.Space.Create(this.DeathExplosion);
                     explosion.Transform.WorldTranslation = this.Owner.Transform.WorldTranslation;
                     explosion.Transform.WorldRotation = this.Owner.Transform.WorldRotation;
-                    explosion.SphericalParticleEmitter.StartVelocity += this.Owner.RigidBody.Velocity * 0.3;
+                    
+                    var emitter = explosion.SphericalParticleEmitter;
+                    if(emitter != null)
+                    {
+                        emitter.StartVelocity += this.Owner.RigidBody.Velocity * 0.3;
+                    }
                 }
             }
             this.Dead == true;
