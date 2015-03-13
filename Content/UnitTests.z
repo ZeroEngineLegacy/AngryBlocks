@@ -1,0 +1,17 @@
+[RunInEditor]
+class UnitTests : ZilchComponent
+{
+    function Initialize(init : CogInitializer)
+    {
+        Zero.Connect(Zero.Engine, "RunUnitTests", this.OnRunUnitTests);
+    }
+
+    function OnRunUnitTests(event : Event)
+    {
+        var seq = Actions.Sequence(Zero.Editor.Actions);
+        Action.Delay(seq, 1.0);
+        Action.Call(seq, Zero.Editor.PlaySingleGame);
+        Action.Delay(seq, 10.0);
+        Action.Call(seq, this.GameSession.RequestQuit);
+    }
+}
