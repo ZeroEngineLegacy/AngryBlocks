@@ -1,6 +1,6 @@
 Level = 
 {
-	LevelSettings = 
+	Cog = 
 	{
 		LinkId = 
 		{
@@ -32,8 +32,36 @@ Level =
 			int Layer = 0,
 			bool Active = true,
 			bool Blocking = true,
-			uint Renderer = 1,
-			uint Camera = 2,
+			CogPath Renderer = 
+			{
+				string Path = ".",
+				bool ErrorOnResolveToNull = false,
+				bool ErrorOnPathCantCompute = false,
+				bool ErrorOnDirectLinkFail = false,
+				bool UpdateCogOnPathChange = true,
+				bool UpdatePathOnCogChange = true,
+				bool UpdateCogOnInitialize = true,
+				bool ResolvedNullErrorOccurred = false,
+				uint ResolvedCog = 1,
+				CogPathPreference PathPreference0 = CogRelative,
+				CogPathPreference PathPreference1 = SpaceRelative,
+				CogPathPreference PathPreference2 = Absolute,
+			},
+			CogPath Camera = 
+			{
+				string Path = ":/Camera",
+				bool ErrorOnResolveToNull = false,
+				bool ErrorOnPathCantCompute = false,
+				bool ErrorOnDirectLinkFail = false,
+				bool UpdateCogOnPathChange = true,
+				bool UpdatePathOnCogChange = true,
+				bool UpdateCogOnInitialize = true,
+				bool ResolvedNullErrorOccurred = false,
+				uint ResolvedCog = 2,
+				CogPathPreference PathPreference0 = CogRelative,
+				CogPathPreference PathPreference1 = SpaceRelative,
+				CogPathPreference PathPreference2 = Absolute,
+			},
 			ViewportScaling Scaling = Letterbox,
 			Vec2 Resolution = [800, 480],
 			Vec4 MarginColor = [0, 0, 0, 1],
@@ -50,6 +78,10 @@ Level =
 		GameLogic = 
 		{
 		},
+		UnitTests = 
+		{
+			int ScreenShotsToTake = 10,
+		},
 	},
 	Cog = 
 	{
@@ -63,7 +95,7 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [0.457506, 14.7691, 29.6274],
+			Vec3 Translation = [0.987189, 11.9224, 25.8911],
 			Vec3 Scale = [1, 1, 1],
 			Quat Rotation = [-0.213924, 0.0186126, 0.00407683, 0.976664],
 		},
@@ -83,7 +115,7 @@ Level =
 			float LookDistance = 28.5213,
 			float VerticalAngle = 0.43126,
 			float HorizontalAngle = -0.0381101,
-			Vec3 LookTarget = [-0.529682, 2.84673, 3.73634],
+			Vec3 LookTarget = [0, 0, 0],
 			float MoveSensitivity = 1,
 		},
 		EditorRenderer = 
@@ -796,6 +828,43 @@ Level =
 			float MinimumImpulseForDamage = 1,
 			string DamagedSprite = "5376abd8c2824fc2:HardBlockDamaged",
 			string DeathExplosion = "53768c63d0a98357:StoneBreak",
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 28,
+		},
+		Named = 
+		{
+			string Name = "Root",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0.457507, 14.7691, 29.6274],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Hierarchy = 
+		{
+			Cog = 
+			{
+				LinkId = 
+				{
+					uint Id = 29,
+				},
+				Named = 
+				{
+					string Name = "Root",
+				},
+				Transform = 
+				{
+					Vec3 Translation = [0, 0, 0],
+					Vec3 Scale = [1, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+			},
 		},
 	},
 },
