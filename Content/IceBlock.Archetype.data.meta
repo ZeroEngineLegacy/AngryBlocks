@@ -1,11 +1,12 @@
-DataContent = 
+[Version:1]
+DataContent 
 {
-	DataBuilder = 
+	DataBuilder 
 	{
-		string Name = "IceBlock",
-		uint64 ResourceId = 53768a008fd6a427,
-		string LoaderType = "Cog",
-		uint Version = 0,
-		bool ShowInEditor = true,
-	},
-},
+		var Name = "IceBlock"
+		var ResourceId = 0x53768a008fd6a427
+		var LoaderType = "Cog"
+		var Version = 0
+		var ShowInEditor = true
+	}
+}

@@ -1,78 +1,78 @@
-Cog = 
+[Version:1]
+Cog 
 {
-	LinkId = 
+	var Name = "Ball"
+	var LinkId = 1
+	Transform 
 	{
-		uint Id = 1,
-	},
-	Named = 
+		var Translation = Real3{-7.55911064, -4.16934872, 0}
+		var Scale = Real3{1, 1, 1}
+		var Rotation = Quaternion{0, 0, 0, 1}
+	}
+	Sprite 
 	{
-		string Name = "Ball",
-	},
-	Archetyped = 
+		var Visible = true
+		var ViewCulling = true
+		var VisibilityEvents = true
+		var Material = "582c575af53d18c9:AlphaSprite"
+		var VertexColor = Real4{1, 1, 1, 1}
+		var GeometryMode = SpriteGeometryMode.ZPlane
+		var SpriteSource = "5376a85d0d12870d:Ball"
+		var FlipX = false
+		var FlipY = false
+		var AnimationActive = true
+		var AnimationSpeed = 1
+		var StartFrame = 0
+	}
+	Reactive 
 	{
-		string Name = "5376abfcc9acebd5:Ball",
-	},
-	Transform = 
+		var Active = true
+	}
+	Ball 
 	{
-		Vec3 Translation = [-6.04975, -3.61311, 0.0678349],
-		Vec3 Scale = [1, 1, 1],
-		Quat Rotation = [0, 0, 0, 1],
-	},
-	Sprite = 
+		var Slingshot = CogPath
+		{
+			var Path = ":/Slingshot"
+			var ErrorOnResolveToNull = false
+			var ErrorOnPathCantCompute = false
+			var ErrorOnDirectLinkFail = false
+			var UpdateCogOnPathChange = true
+			var UpdatePathOnCogChange = true
+			var UpdateCogOnInitialize = true
+			var ResolvedNullErrorOccurred = false
+			var ResolvedCog = 2
+			var PathPreference0 = CogPathPreference.CogRelative
+			var PathPreference1 = CogPathPreference.SpaceRelative
+			var PathPreference2 = CogPathPreference.Absolute
+		}
+		var MaxStretchLength = 3
+		var ShootPower = 10
+	}
+	SphereCollider 
 	{
-		string SpriteSource = "5376a85d0d12870d:Ball",
-		bool FlipX = false,
-		bool FlipY = false,
-		Vec4 Color = [1, 1, 1, 1],
-		bool Visible = true,
-		bool OnTop = false,
-		bool AnimationActive = true,
-		float AnimationSpeed = 1,
-		uint StartFrame = 0,
-		BlendMode BlendMode = Alpha,
-		SpriteGeometryMode GeometryMode = ZPlane,
-		string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
-	},
-	Reactive = 
+		var Ghost = false
+		var SendsEvents = true
+		var Material = "4faa6050b8692851:HardMaterial"
+		var CollisionGroup = "4e740859314e5515:DefaultGroup"
+		var Offset = Real3{0, 0, 0}
+		var Radius = 0.5
+	}
+	RigidBody 
 	{
-		bool Active = true,
-		bool CaptureMouse = true,
-	},
-	Ball = 
+		var Velocity = Real3{0, 0, 0}
+		var AngularVelocity = Real3{0, 0, 0}
+		var DynamicState = RigidBodyDynamicState.Kinematic
+		var AllowSleep = true
+		var Asleep = false
+		var RotationLocked = false
+		var Mode2D = Mode2DStates.Mode2D
+	}
+	MassOverride 
 	{
-		string Slingshot = ":/Slingshot",
-		float MaxStretchLength = 3,
-		float ShootPower = 10,
-	},
-	SphereCollider = 
-	{
-		bool Ghost = false,
-		bool SendsMessages = true,
-		bool Seamless = false,
-		string MaterialName = "4faa6050b8692851:HardMaterial",
-		string SerializedGroupName = "4e740859314e5515:DefaultGroup",
-		Vec3 Offset = [0, 0, 0],
-		float Radius = 0.5,
-	},
-	RigidBody = 
-	{
-		bool Static = false,
-		bool Asleep = false,
-		bool Kinematic = true,
-		bool RotationLocked = false,
-		bool Mode2D = true,
-		bool AllowSleep = true,
-		bool Inherit2DMode = true,
-		Vec3 Velocity = [0, 0, 0],
-		Vec3 AngularVelocity = [0, 0, 0],
-	},
-	MassOverride = 
-	{
-		bool Active = true,
-		float invMass = 0.333333,
-		Vec3 invInertiaX = [3.33333, 0, 0],
-		Vec3 invInertiaY = [0, 3.33333, 0],
-		Vec3 invInertiaZ = [0, 0, 3.33333],
-		Vec3 LocalCenterOfMass = [0, 0, 0],
-	},
-},
+		var Active = true
+		var InverseMass = 1
+		var Mass = 1
+		var LocalInverseInertiaTensor = Real3x3{1, 0, 0, 0, 1, 0, 0, 0, 1}
+		var LocalCenterOfMass = Real3{0, 0, 0}
+	}
+}

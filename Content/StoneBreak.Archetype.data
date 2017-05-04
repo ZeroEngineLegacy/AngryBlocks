@@ -1,66 +1,68 @@
-Cog = 
+[Version:1]
+Cog 
 {
-	LinkId = 
+	var Name = ""
+	var LinkId = 1
+	Transform 
 	{
-		uint Id = 1,
-	},
-	Archetyped = 
+		var Translation = Real3{-20.7063179, 3.51430511, -1.96875}
+		var Scale = Real3{1, 1, 1}
+		var Rotation = Quaternion{0, 0, 0, 1}
+	}
+	SpriteParticleSystem 
 	{
-		string Name = "53768c63d0a98357:StoneBreak",
-	},
-	Transform = 
+		var Visible = true
+		var ViewCulling = true
+		var VisibilityEvents = true
+		var Material = "582c575af53d18c9:AlphaSprite"
+		var ChildSystem = false
+		var SystemSpace = SystemSpace.WorldSpace
+		var DrawOrder = 0
+		var Tint = Real4{1, 1, 1, 1}
+		var WarmUpTime = 0
+		var GeometryMode = ParticleGeometryMode.Billboarded
+		var SortMode = ParticleSortMode.Youngest
+		var ParticleAnimation = ParticleAnimationMode.Single
+		var SpriteSource = "595dbd5545ab190e:SpriteFragmentTest"
+		var VelocityScale = 1
+		var LengthScale = 0
+		var SystemSize = Real3{5, 5, 5}
+		var PreviewInEditor = false
+	}
+	LinearParticleAnimator 
 	{
-		Vec3 Translation = [3.17294, 10.0762, 1.80887],
-		Vec3 Scale = [1, 1, 1],
-		Quat Rotation = [0, 0, 0, 1],
-	},
-	SpriteParticleSystem = 
+		var Force = Real3{0, -10, 0}
+		var RandomForce = Real3{0, 0, 0}
+		var Torque = 0
+		var Growth = 0
+		var Dampening = 1
+		var Twist = Real3{0, 0, 0}
+	}
+	SphericalParticleEmitter 
 	{
-		SystemChildMode ChildMode = Independent,
-		SystemSpace SystemSpace = WorldSpace,
-		uint DrawOrder = 0,
-		ParticleGeometry GeometryMode = Billboarded,
-		ParticleRenderMode RenderMode = Blended,
-		ParticleSortMode SortMode = None,
-		string Texture = "53768d132ad55eda:SpriteFragmentTest",
-		Vec4 Tint = [1, 1, 1, 1],
-		float VelocityScale = 1,
-		float LengthScale = 0,
-		float MaxParticleSize = 100,
-		Vec3 SystemSize = [5, 5, 5],
-	},
-	LinearParticleAnimator = 
+		var Active = true
+		var EmitCount = 40
+		var EmitDelay = 0
+		var EmitRate = 1000
+		var EmitVariance = 0
+		var EmitRateSoftStartTime = 0
+		var Size = 0.600000024
+		var SizeVariance = 0
+		var Lifetime = 2
+		var LifetimeVariance = 0
+		var Spin = 0
+		var SpinVariance = 300
+		var RandomSpin = true
+		var Fill = 0
+		var EmitterVelocityPercent = 0
+		var StartVelocity = Real3{0, 0, 0}
+		var RandomVelocity = Real3{3, 3, 0}
+		var TangentVelocity = Real3{0, 0, 0}
+		var EmitterSize = Real3{0.649999976, 2.20000005, 0}
+		var FastMovingEmitter = false
+	}
+	ParticleGradientAnimator 
 	{
-		Vec3 Force = [0, -10, 0],
-		Vec3 RandomForce = [0, 0, 0],
-		float Torque = 0,
-		float Growth = 0,
-		float Dampening = 1,
-		Vec3 Twist = [0, 0, 0],
-	},
-	SphericalParticleEmitter = 
-	{
-		bool Active = true,
-		uint EmitCount = 40,
-		float EmitRate = 1000,
-		float EmitVariance = 0,
-		float Size = 0.6,
-		float SizeVariance = 0,
-		float Lifetime = 2,
-		float LifetimeVariance = 0,
-		float Spin = 0,
-		float SpinVariance = 300,
-		bool RandomSpin = true,
-		float Fill = 0,
-		float EmitterVelocityPercent = 0,
-		Vec3 StartVelocity = [0, 0, 0],
-		Vec3 RandomVelocity = [3, 3, 0],
-		Vec3 TangentVelocity = [0, 0, 0],
-		Vec3 EmitterSize = [0.65, 2.2, 0],
-		bool FastMovingEmitter = false,
-	},
-	ParticleGradientAnimator = 
-	{
-		string ColorGradientName = "5376b2e21a24b4c1:FadeOut",
-	},
-},
+		var ColorGradient = "5376b2e21a24b4c1:FadeOut"
+	}
+}

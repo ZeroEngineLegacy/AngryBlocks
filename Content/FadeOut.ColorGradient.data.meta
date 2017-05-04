@@ -1,11 +1,12 @@
-DataContent = 
+[Version:1]
+DataContent 
 {
-	DataBuilder = 
+	DataBuilder 
 	{
-		string Name = "FadeOut",
-		uint64 ResourceId = 5376b2e21a24b4c1,
-		string LoaderType = "ColorGradient",
-		uint Version = 0,
-		bool ShowInEditor = true,
-	},
-},
+		var Name = "FadeOut"
+		var ResourceId = 0x5376b2e21a24b4c1
+		var LoaderType = "ColorGradient"
+		var Version = 0
+		var ShowInEditor = true
+	}
+}
