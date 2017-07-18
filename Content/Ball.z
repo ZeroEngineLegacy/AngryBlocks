@@ -3,7 +3,7 @@ class Ball : ZilchComponent
   var Grabbed : Boolean = false;
   
   [Property]
-  var Slingshot : CogPath = null;
+  var Slingshot : CogPath = CogPath();
   
   [Property]
   var MaxStretchLength : Real = 3.0;
