@@ -61,8 +61,10 @@ Cog
 		var EmitterSize = Real3{0.649999976, 2.20000005, 0}
 		var FastMovingEmitter = false
 	}
-	ParticleGradientAnimator 
+	ParticleColorAnimator 
 	{
-		var ColorGradient = "5376b2e21a24b4c1:FadeOut"
+		var TimeGradient = "591abd225f232eaa:FadeInOut"
+		var VelocityGradient = "null"
+		var MaxParticleSpeed = 5
 	}
 }
