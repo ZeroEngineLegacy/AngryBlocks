@@ -23,7 +23,14 @@ class Ball : ZilchComponent
     Zero.Connect(this.Owner, Events.MouseUpdate, this.OnMouseUpdate);
     Zero.Connect(this.Owner, Events.MouseUp, this.OnMouseUp);
     
-    this.SlingshotPosition = this.Slingshot.Cog.Transform.WorldTranslation;
+    Zero.Connect(init, Events.AllObjectsInitialized, this.OnAllObjectsInitialized);
+  }
+
+  function OnAllObjectsInitialized(event : CogInitializerEvent)
+  {
+    var slingshotCog = this.Slingshot.Cog;
+    if(slingshotCog != null)
+      this.SlingshotPosition = slingshotCog.Transform.WorldTranslation;
   }
   
   function ComputeMouseVector(e : ViewportMouseEvent) : Real3
